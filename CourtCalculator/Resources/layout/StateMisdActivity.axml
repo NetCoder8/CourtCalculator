@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <TextView
+        android:text="@string/stateMisdTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CityMisdTitle"
+        android:textColor="@color/White"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp" />
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1"
+        android:stretchColumns="*">
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="@string/txtTues"
+                android:gravity="left"
+                android:textColor="@color/White" />
+            <TextView
+                android:id="@+id/StateMisdTue"
+                android:gravity="center"
+                android:textColor="@color/Red900" />
+            <TextView
+                android:text="@string/txt1330"
+                android:id="@+id/textView5"
+                android:gravity="right"
+                android:textColor="@color/White" />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="@string/txtWed"
+                android:gravity="left"
+                android:textColor="@color/White" />
+            <TextView
+                android:id="@+id/StateMisdWed"
+                android:gravity="center"
+                android:textColor="@color/Red900" />
+            <TextView
+                android:text="@string/txt1330"
+                android:id="@+id/textView5"
+                android:gravity="right"
+                android:textColor="@color/White" />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="@string/txtThur"
+                android:gravity="left"
+                android:textColor="@color/White" />
+            <TextView
+                android:id="@+id/StateMisdThurs"
+                android:gravity="center"
+                android:textColor="@color/Red900" />
+            <TextView
+                android:text="@string/txt1330"
+                android:id="@+id/textView5"
+                android:gravity="right"
+                android:textColor="@color/White" />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="@string/txtFri"
+                android:gravity="left"
+                android:textColor="@color/White" />
+            <TextView
+                android:id="@+id/StateMisdFri"
+                android:gravity="center"
+                android:textColor="@color/Red900" />
+            <TextView
+                android:text="@string/txt1330"
+                android:id="@+id/textView5"
+                android:gravity="right"
+                android:textColor="@color/White" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout2"
+        android:layout_weight="1"
+        android:gravity="bottom">
+        <Button
+            android:text="@string/btnMainMenu"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMainMenu"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/accent_material_light"
+            android:textColor="@color/White" />
+    </LinearLayout>
+</LinearLayout>

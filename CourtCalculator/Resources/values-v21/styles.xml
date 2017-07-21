@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!-- Inherit from the light Material Theme -->
+  <style name="MyCustomTheme" parent="Theme.AppCompat">
+    <!-- Customizations go here -->
+    <item name="android:colorPrimary">@color/BlueGrey800</item>
+    <item name="android:colorPrimaryDark">@color/BlueGrey900</item>
+    <item name="android:colorAccent">@color/accent_material_light</item>
+    <item name="android:windowBackground">@color/BlueGrey600</item>
+    <item name="android:textColorPrimary">@color/White</item>
+    <item name="android:navigationBarColor">@color/BlueGrey800</item>
+  </style>
+</resources>

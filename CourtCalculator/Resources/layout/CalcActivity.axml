@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <Button
+        android:text="@string/btnDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSelectDate"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/White"
+        android:background="@color/accent_material_light"
+        android:layout_marginBottom="20dp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup1"
+        android:layout_marginTop="30dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rdbtnCityTraffic"
+            android:id="@+id/radCityTraffic"
+            android:textColor="@color/White" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbtnStateTraffic"
+            android:id="@+id/radStateTraffic"
+            android:textColor="@color/White" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbtnCityMisd"
+            android:id="@+id/radCityMisd"
+            android:textColor="@color/White" />
+        <RadioButton
+            android:text="@string/rdbtnStateMisd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radStateMisd"
+            android:textColor="@color/White" />
+    </RadioGroup>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:layout_gravity="bottom">
+        <Button
+            android:text="@string/btnGo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGo"
+            android:background="@color/accent_material_light"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/White"
+            android:layout_marginTop="125dp" />
+        <Button
+            android:text="@string/btnMainMenu"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMainMenu"
+            android:textColor="@color/White"
+            android:background="@color/accent_material_light"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

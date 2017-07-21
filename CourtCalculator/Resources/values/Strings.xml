@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Court Calculator</string>
+  <string name="txtMainTitle1">Welcome to the Court Calculator.</string>
+  <string name="txtMainTitle2">Please make a selection</string>
+  <string name="rdbtnCourtDate">Get Court Date</string>
+  <string name="rdbtnWaiver">Waiverable Fine Calculator</string>
+  <string name="btnGo">Go</string>
+  <string name="imgBadge">Badge Image</string>
+  <string name="btnDate">Select an offense date</string>
+  <string name="rdbtnCityTraffic">City Traffic</string>
+  <string name="rdbtnStateTraffic">State Traffic / DWI</string>
+  <string name="rdbtnCityMisd">City Misdemeanor / Serious Traffic / DWI / DUS</string>
+  <string name="rdbtnStateMisd">State Misdemeanor</string>
+  <string name="btnMainMenu">Main Menu</string>
+  <string name="txtCityTitle">City Traffic</string>
+  <string name="txtMonday">Monday</string>
+  <string name="txtTues">Tuesday</string>
+  <string name="txtWed">Wednesday</string>
+  <string name="txtThur">Thursday</string>
+  <string name="txtFri">Friday</string>
+  <string name="txt1030">at 1030</string>
+  <string name="txt1330">at 1330</string>
+  <string name="txtStateTrafficTitle">State Traffic / DWI</string>
+  <string name="txtStateTraffic0900">at 0900 (Last Name A-N)</string>
+  <string name="txtStateTraffic1030">at 1030 (Last Name O-Z)</string>
+  <string name="txtCityMisdTitle">City Misdemeanor / Serious Traffic / DWI / DUS</string>
+  <string name="txtCityMisdTime1">at 1330 (Last Name A-E)</string>
+  <string name="txtCityMisdTime2">at 1330 (Last Name F-K)</string>
+  <string name="txtCityMisdTime3">at 1330 (Last Name L-P)</string>
+  <string name="txtCityMisdTime4">at 1330 (Last Name Q-T)</string>
+  <string name="txtCityMisdTime5">at 1330 (Last Name U-Z)</string>
+  <string name="txtStateTitle">State Misdemeanor</string>
+  <string name="btnAdd">Add Offense(s)</string>
+  <string name="btnCalcFine">Calculate Fine</string>
+  <string name="btnStartOver">Start Over</string>
+  <string name="spinnerPrompt">Select an offense Type</string>
+  <string name="spinnerPrompt2">Select an offense</string>
+  <string name="cityMisdTitle">City Misdemeanors</string>
+  <string name="courtDayCalcTitle">Court Date Calculator</string>
+  <string name="waiverTitle">Waiver Calculator</string>
+  <string name="cityTrafficTitle">City Traffic Court Dates</string>
+  <string name="stateMisdTitle">State Misdemeanor Court Dates</string>
+  <string name="stateTrafficTitle">State Traffic Court Dates</string>
+  <string name="hint">Enter Court Cost</string>
+
+  <string-array name="blankOffense">
+    <item></item>
+  </string-array>
+
+  <string-array name="offenseType">
+    <item>Select an offense type</item>
+    <item>Speeding Violations</item>
+    <item>Turning/Passing</item>
+    <item>Traffic Control Device/Traffic Signs</item>
+    <item>Vehicle Defects/Requirements</item>
+    <item>Noise/Decibel Violations</item>
+    <item>Registration Of Vehicles</item>
+    <item>Passengers/Load Violations</item>
+    <item>One Way Street And Alley</item>
+    <item>Bicycles, Snowmobiles, Toy Vehicles, Mini-Bikes</item>
+    <item>City Park Violations</item>
+    <item>Lane Line Violations</item>
+    <item>Right Of Way</item>
+    <item>Operators License</item>
+    <item>Pedestrian Violations</item>
+    <item>Driving Where Not Allowed</item>
+    <item>Driver Rules - Other</item>
+    <item>Littering And Spilling</item>
+    <item>Miscellaneous</item>
+    <item>Animal Control (non-bite cases only)</item>
+    <item>Handicap Parking Tickets</item>
+    <item>Required Stops RR Xing Or School Bus</item>
+  </string-array>
+
+  <string-array name="speedingViolations">
+    <item>Select an offense</item>
+    <item>1-5 MPH over</item>
+    <item>6-10 MPH over</item>
+    <item>11-15 MPH over</item>
+    <item>16-20 MPH over</item>
+    <item>21-35 MPH over</item>
+    <item>36+ MPH over</item>
+  </string-array>
+
+  <string-array name="turningPassingViolations">
+    <item>Select an offense</item>
+    <item>Improperly overtake vehicle</item>
+    <item>Hindering vehicle from passing</item>
+    <item>Overtake pass vehicle within a street intersection</item>
+    <item>Passing on viaduct</item>
+    <item>No passing zone</item>
+    <item>Change course w/o safety/signal</item>
+    <item>Illegal U-turn</item>
+    <item>Improper turn</item>
+  </string-array>
+
+  <string-array name="TrafficControlViolations">
+    <item>Select an offense</item>
+    <item>Fail to obey traffic control device</item>
+    <item>Evasion of traffic control device</item>
+    <item>Violate automatic traffic control signal</item>
+    <item>Violate stop sign</item>
+  </string-array>
+
+  <string-array name="VehicleDefectViolations">
+    <item>Select an offense</item>
+    <item>Defective steering wheel</item>
+    <item>Impaired operator visibility</item>
+    <item>Muffler</item>
+    <item>Rearview mirror</item>
+    <item>Unsafe tires</item>
+    <item>Vehicle requirements/width or height (specify)</item>
+    <item>Two headlights required at night</item>
+  </string-array>
+
+  <string-array name="NoiseDecibelViolations">
+    <item>Select an offense</item>
+    <item>Unnecessary noise/squealing tires</item>
+  </string-array>
+
+  <string-array name="registrationViolations">
+    <item>Select an offense</item>
+    <item>No valid registration</item>
+    <item>No proof of ownership</item>
+    <item>Fictitious plates</item>
+    <item>Fail to display two plates/plates not clear or visible</item>
+    <item>Utility trailer plates</item>
+    <item>Expired intransit decal (s)</item>
+    <item>Failure to return cancelled plates (s)</item>
+    <item>Misuse of dealer plates (s)</item>
+    <item>Misuse of local plates or farm plates (s)</item>
+    <item>Operate unregistered NE-plated COMMERCIAL truck/tractor (1-20 days)(s)</item>
+    <item>Operate unregistered NE-plated COMMERCIAL truck/tractor (21-30days)(s)</item>
+    <item>Operate unregistered NE-plated COMMERCIAL truck/tractor (31-40 days)(s)</item>
+    <item>Operate unregistered NE-plated COMMERCIAL truck/tractor (41-50 days)(s)</item>
+    <item>Operate unregistered NE-plated COMMERCIAL truck/tractor (51+ days)(s)</item>
+  </string-array>
+
+  <string-array name="passengerLoadViolations">
+    <item>Select an offense</item>
+    <item>No seat belt</item>
+    <item>Child restraint violation</item>
+    <item>Excess passengers (too many in front seat)</item>
+    <item>Motorcycle passenger restrictions</item>
+    <item>Obstructing view of driver</item>
+    <item>Motorcycle helmet required (s)</item>
+  </string-array>
+
+  <string-array name="OneWayStreetViolations">
+    <item>Select an offense</item>
+    <item>Wrong way on a one way OR wrong direction in alley</item>
+  </string-array>
+
+  <string-array name="bikeViolations">
+    <item>Select an offense</item>
+    <item>Riding bicycle on sidewalk in congested area</item>
+    <item>Failure to keep to right of roadway</item>
+    <item>Too many person on bicycle</item>
+    <item>Unlawful operation of snowmobile</item>
+  </string-array>
+
+  <string-array name="cityParkViolations">
+    <item>Select an offense</item>
+    <item>Unlawful parking of vehicle</item>
+    <item>Park closed-enter after hours</item>
+    <item>Possess/consume alcohol in park</item>
+  </string-array>
+
+  <string-array name="laneLineViolations">
+    <item>Select an offense</item>
+    <item>Drive to left of center of road</item>
+    <item>Improper lane change</item>
+    <item>Motorcycle lane restriction</item>
+  </string-array>
+
+  <string-array name="rowViolations">
+    <item>Select an offense</item>
+    <item>FTYROW to emergency vehicle</item>
+    <item>FTYROW (Violate Yield Sign)</item>
+    <item>FTYROW pedestrian</item>
+    <item>FTYROW private road or driveway</item>
+  </string-array>
+
+  <string-array name="licenseViolations">
+    <item>Select an offense</item>
+    <item>No valid drivers license</item>
+    <item>No valid motorcycle drivers license</item>
+    <item>No valid drivers license on person</item>
+    <item>No current operators license (non-resident)</item>
+  </string-array>
+
+  <string-array name="pedestrianViolations">
+    <item>Select an offense</item>
+    <item>Pedestrian fail to obey traffic control device</item>
+    <item>Hitchhiking in roadway</item>
+  </string-array>
+
+  <string-array name="driveNotAllowedViolations">
+    <item>Select an offense</item>
+    <item>Drive onto controlled access roadway</item>
+    <item>Drive within sidewalk space</item>
+    <item>Drive on sidewalk</item>
+    <item>Drive on median</item>
+    <item>Driving on shoulder</item>
+  </string-array>
+
+  <string-array name="driveRulesOtherViolations">
+    <item>Select an offense</item>
+    <item>Backing without safety</item>
+    <item>Driving too fast for conditions</item>
+    <item>Fail to dim headlights</item>
+    <item>Following too closely</item>
+    <item>Handheld wireless communication device violation (s)</item>
+    <item>Improper use of horn</item>
+    <item>Impeding traffic</item>
+    <item>Interfere with use of street</item>
+    <item>Lights required after dark</item>
+    <item>Motorcycle footrests</item>
+    <item>Opening door against traffic</item>
+    <item>Possession of open alcohol container</item>
+    <item>Slow moving vehicle emblem</item>
+    <item>Studded tires</item>
+    <item>Using a radar detector for motor carriers</item>
+    <item>Negligent driving</item>
+    <item>Careless driving</item>
+  </string-array>
+
+  <string-array name="litteringViolations">
+    <item>Select an offense</item>
+    <item>All littering violations</item>
+    <item>Deposit materials on road/ditch (s)</item>
+    <item>Deposit rubbish on highway (s)</item>
+    <item>Uncovered materials on vehicle</item>
+    <item>Spilling load - Allow contents of truck to fall upon street</item>
+  </string-array>
+
+  <string-array name="miscViolations">
+    <item>Select an offense</item>
+    <item>Occupy business lot after hours</item>
+    <item>Public consumption of alcohol</item>
+    <item>Trespass (City)</item>
+    <item>Shooting from highway</item>
+    <item>Hunting/fishing w/o permit</item>
+    <item>Possession of drug paraphernalia</item>
+    <item>Fireworks possession or discharge</item>
+    <item>Junk vehicle on private property</item>
+    <item>Urinating in public</item>
+    <item>Smoking prohibited 1st offense</item>
+    <item>Proprietor permitting smoking 1st offense</item>
+    <item>Emergency water restrictions</item>
+  </string-array>
+
+  <string-array name="animalViolations">
+    <item>Select an offense</item>
+    <item>All animal violations (non-bite)</item>
+  </string-array>
+
+  <string-array name="handicapViolations">
+    <item>Select an offense</item>
+    <item>Handicap violation 1st Offense</item>
+    <item>Handicap violation 2nd Offense</item>
+    <item>Handicap violation 3rd Offense</item>
+  </string-array>
+
+  <string-array name="requiredStopsViolations">
+    <item>Select an offense</item>
+    <item>Required stop at RR Xing/disobey signal</item>
+    <item>Unlawful overtaking/passing of school bus</item>
+  </string-array>
+  <string name="btnOK">OK</string>
+  <string name="offenseTypeHint">Offense Type</string>
+</resources>

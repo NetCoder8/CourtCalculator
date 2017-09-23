@@ -42,6 +42,22 @@ namespace CourtCalculator
             btnGo.Click += BtnGo_Click;
         }
 
+        protected override void OnSaveInstanceState(Bundle outState)
+        {
+            base.OnSaveInstanceState(outState);
+            outState.PutInt("Year", selectedYear);
+            outState.PutInt("Month", selectedMonth);
+            outState.PutInt("Day", selectedDay);
+        }
+
+        protected override void OnRestoreInstanceState(Bundle savedInstanceState)
+        {
+            base.OnRestoreInstanceState(savedInstanceState);
+            selectedYear = savedInstanceState.GetInt("Year");
+            selectedMonth = savedInstanceState.GetInt("Month");
+            selectedDay = savedInstanceState.GetInt("Day");
+        }
+
         // Button click to get a court date
         private void BtnGo_Click(object sender, EventArgs e)
         {

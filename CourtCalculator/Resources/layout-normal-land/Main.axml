@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp">
-    <LinearLayout
+    <RelativeLayout
         android:orientation="vertical"
         android:minWidth="25px"
         android:minHeight="25px"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="208.3dp"
+        android:layout_height="wrap_content"
         android:id="@+id/linearLayout1">
         <ImageView
             android:src="@drawable/badge"
@@ -17,15 +16,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
+    </RelativeLayout>
+    <RelativeLayout
         android:minWidth="25px"
         android:minHeight="25px"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/linearLayout3"
-        android:layout_marginLeft="30dp">
+        android:layout_alignRight="@id/linearLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp">
         <TextView
             android:text="@string/txtMainTitle1"
             android:id="@+id/textView1"
@@ -33,7 +34,8 @@
             android:textSize="18dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true" />
         <TextView
             android:text="@string/txtMainTitle2"
             android:id="@+id/textView2"
@@ -42,14 +44,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true" />
         <RadioGroup
             android:id="@+id/radioGroup1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/textView2"
+            android:layout_centerHorizontal="true">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,6 +78,8 @@
             android:width="100dp"
             android:layout_width="200dp"
             android:layout_marginRight="4.0dp"
-            android:layout_gravity="center_horizontal" />
-    </LinearLayout>
-</LinearLayout>
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

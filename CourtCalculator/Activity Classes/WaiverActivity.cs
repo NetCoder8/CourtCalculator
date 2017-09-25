@@ -865,6 +865,11 @@ namespace CourtCalculator
             showingCostAlert = savedInstanceState.GetBoolean("COST_DIALOG");
             priceCalculated = savedInstanceState.GetBoolean("ALREADY_CALCULATED");
 
+            var focusLayout = (RelativeLayout) FindViewById(Resource.Id.layout1);
+            focusLayout.Focusable = true;
+            focusLayout.FocusableInTouchMode = true;
+            focusLayout.RequestFocus();
+
             if (showingOffenseAlert)
             {
                 ShowOffenseDialog();

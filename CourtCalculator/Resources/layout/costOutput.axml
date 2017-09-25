@@ -1,74 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/White">
-    <TextView
-        android:text="Total Cost"
+    android:fillViewport="false"
+    android:focusableInTouchMode="false"
+    android:focusable="false">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/title"
-        android:textColor="@color/White"
-        android:textSize="20sp"
-        android:background="@color/accent_material_light"
-        android:gravity="center" />
-    <TextView
-        android:text="Offense(s)"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView6"
-        android:textColor="@color/abc_search_url_text_pressed"
-        android:textSize="15sp"
-        android:gravity="center"
-        android:layout_marginTop="10dp" />
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_height="match_parent"
+        android:background="@color/White">
+        <TextView
+            android:text="Total Cost"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/title"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            android:background="@color/accent_material_light"
+            android:gravity="center" />
+        <TextView
+            android:text="Offense(s)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textColor="@color/abc_search_url_text_pressed"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/title" />
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/textView6"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/offenseListScroll">
+            <TextView
+                android:text="Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/offensesAdded"
+                android:textColor="@color/foreground_material_light"
+                android:singleLine="false"
+                android:textSize="15sp"
+                android:layout_margin="20dp" />
+        </ScrollView>
         <TextView
             android:text="Text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/offensesAdded"
-            android:textColor="@color/foreground_material_light"
-            android:singleLine="false"
+            android:id="@+id/fineAmount"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@color/abc_search_url_text_pressed"
             android:textSize="15sp"
-            android:layout_margin="20dp" />
-    </ScrollView>
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/fineAmount"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:textColor="@color/abc_search_url_text_pressed"
-        android:textSize="15sp" />
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/courtCost"
-        android:textColor="@color/abc_search_url_text_pressed"
-        android:textSize="15sp"
-        android:gravity="center"
-        android:layout_marginBottom="10dp" />
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/totalCost"
-        android:gravity="center"
-        android:textColor="@color/abc_search_url_text_pressed"
-        android:textSize="15sp"
-        android:layout_marginBottom="20dp" />
-    <Button
-        android:text="OK"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnDismiss"
-        android:layout_gravity="center_horizontal" />
-</LinearLayout>
+            android:layout_below="@id/offenseListScroll" />
+        <TextView
+            android:text="Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/courtCost"
+            android:textColor="@color/abc_search_url_text_pressed"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/fineAmount" />
+        <TextView
+            android:text="Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalCost"
+            android:gravity="center"
+            android:textColor="@color/abc_search_url_text_pressed"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/courtCost" />
+        <Button
+            android:text="OK"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDismiss"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/totalCost"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>

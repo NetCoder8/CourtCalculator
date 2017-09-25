@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp">
@@ -11,89 +10,77 @@
         android:id="@+id/StateTrafficTitle"
         android:textColor="@color/White"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="50dp" />
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/layoutMain">
-        <LinearLayout
-            android:orientation="horizontal"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_below="@id/StateTrafficTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp">
+        <TableLayout
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/linearLayout1">
-            <TableLayout
-                android:minWidth="25px"
-                android:minHeight="25px"
-                android:id="@+id/tableLayout1"
-                android:stretchColumns="*"
-                android:layout_width="400dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="35dp"
-                android:gravity="center_vertical">
-                <TableRow
-                    android:layout_marginBottom="10dp"
-                    android:id="@+id/tableRow1">
-                    <TextView
-                        android:text="@string/txtWed"
-                        android:gravity="left"
-                        android:textColor="@color/White"
-                        android:id="@+id/textView6" />
-                    <TextView
-                        android:id="@+id/StateTrafficAtoN"
-                        android:gravity="center"
-                        android:textColor="@color/Red900" />
-                    <TextView
-                        android:text="@string/txtStateTraffic0900"
-                        android:id="@+id/textView5"
-                        android:gravity="right"
-                        android:textColor="@color/White" />
-                </TableRow>
-                <TableRow
-                    android:layout_marginBottom="10dp"
-                    android:id="@+id/tableRow2">
-                    <TextView
-                        android:text="@string/txtWed"
-                        android:gravity="left"
-                        android:textColor="@color/White"
-                        android:id="@+id/textView7" />
-                    <TextView
-                        android:id="@+id/StateTrafficOtoZ"
-                        android:gravity="center"
-                        android:textColor="@color/Red900" />
-                    <TextView
-                        android:text="@string/txtStateTraffic1030"
-                        android:id="@+id/textView5"
-                        android:gravity="right"
-                        android:textColor="@color/White" />
-                </TableRow>
-            </TableLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/linearLayout3"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical">
-            <RelativeLayout
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                android:id="@+id/relativeLayout"
-                android:gravity="center_vertical">
-                <Button
-                    android:text="@string/btnMainMenu"
-                    android:id="@+id/btnMainMenu"
-                    android:background="@color/accent_material_light"
+            android:id="@+id/tableLayout1"
+            android:stretchColumns="*"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tableRow1">
+                <TextView
+                    android:text="@string/txtWed"
+                    android:gravity="left"
                     android:textColor="@color/White"
-                    android:layout_width="150dp"
-                    android:layout_gravity="center"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-        </LinearLayout>
-    </LinearLayout>
-</LinearLayout>
+                    android:id="@+id/textView6" />
+                <TextView
+                    android:id="@+id/StateTrafficAtoN"
+                    android:gravity="center"
+                    android:textColor="@color/Red900" />
+                <TextView
+                    android:text="@string/txtStateTraffic0900"
+                    android:id="@+id/textView5"
+                    android:gravity="right"
+                    android:textColor="@color/White" />
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tableRow2">
+                <TextView
+                    android:text="@string/txtWed"
+                    android:gravity="left"
+                    android:textColor="@color/White"
+                    android:id="@+id/textView7" />
+                <TextView
+                    android:id="@+id/StateTrafficOtoZ"
+                    android:gravity="center"
+                    android:textColor="@color/Red900" />
+                <TextView
+                    android:text="@string/txtStateTraffic1030"
+                    android:id="@+id/textView5"
+                    android:gravity="right"
+                    android:textColor="@color/White" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@id/linearLayout1"
+        android:gravity="bottom">
+        <Button
+            android:text="@string/btnMainMenu"
+            android:id="@+id/btnMainMenu"
+            android:background="@color/accent_material_light"
+            android:textColor="@color/White"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

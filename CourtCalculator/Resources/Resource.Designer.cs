@@ -2415,32 +2415,32 @@ namespace CourtCalculator
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f07008c
-			public const int CityMisdFri = 2131165324;
+			// aapt resource value: 0x7f070097
+			public const int CityMisdFri = 2131165335;
 			
-			// aapt resource value: 0x7f070087
-			public const int CityMisdMon = 2131165319;
+			// aapt resource value: 0x7f07008a
+			public const int CityMisdMon = 2131165322;
 			
-			// aapt resource value: 0x7f07008b
-			public const int CityMisdThurs = 2131165323;
+			// aapt resource value: 0x7f070094
+			public const int CityMisdThurs = 2131165332;
 			
 			// aapt resource value: 0x7f070085
 			public const int CityMisdTitle = 2131165317;
 			
-			// aapt resource value: 0x7f070089
-			public const int CityMisdTues = 2131165321;
+			// aapt resource value: 0x7f07008e
+			public const int CityMisdTues = 2131165326;
 			
-			// aapt resource value: 0x7f07008a
-			public const int CityMisdWed = 2131165322;
-			
-			// aapt resource value: 0x7f07009c
-			public const int CityTrafficThurs = 2131165340;
-			
-			// aapt resource value: 0x7f07009a
-			public const int CityTrafficTitle = 2131165338;
+			// aapt resource value: 0x7f070091
+			public const int CityMisdWed = 2131165329;
 			
 			// aapt resource value: 0x7f07009b
-			public const int CityTrafficTues = 2131165339;
+			public const int CityTrafficThurs = 2131165339;
+			
+			// aapt resource value: 0x7f070099
+			public const int CityTrafficTitle = 2131165337;
+			
+			// aapt resource value: 0x7f07009a
+			public const int CityTrafficTues = 2131165338;
 			
 			// aapt resource value: 0x7f0700d4
 			public const int StateMisdFri = 2131165396;
@@ -2553,8 +2553,8 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f0700de
 			public const int btnCalcFine = 2131165406;
 			
-			// aapt resource value: 0x7f0700a1
-			public const int btnDismiss = 2131165345;
+			// aapt resource value: 0x7f0700a0
+			public const int btnDismiss = 2131165344;
 			
 			// aapt resource value: 0x7f070080
 			public const int btnGo = 2131165312;
@@ -2616,8 +2616,8 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f0700dd
 			public const int cost = 2131165405;
 			
-			// aapt resource value: 0x7f07009f
-			public const int courtCost = 2131165343;
+			// aapt resource value: 0x7f07009e
+			public const int courtCost = 2131165342;
 			
 			// aapt resource value: 0x7f07005c
 			public const int custom = 2131165276;
@@ -2685,8 +2685,8 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f07003b
 			public const int fill_vertical = 2131165243;
 			
-			// aapt resource value: 0x7f07009e
-			public const int fineAmount = 2131165342;
+			// aapt resource value: 0x7f07009d
+			public const int fineAmount = 2131165341;
 			
 			// aapt resource value: 0x7f070046
 			public const int @fixed = 2131165254;
@@ -2730,8 +2730,8 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f0700df
 			public const int layout3 = 2131165407;
 			
-			// aapt resource value: 0x7f07008d
-			public const int layoutMain = 2131165325;
+			// aapt resource value: 0x7f070086
+			public const int layoutMain = 2131165318;
 			
 			// aapt resource value: 0x7f07003c
 			public const int left = 2131165244;
@@ -2751,8 +2751,8 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f070083
 			public const int linearLayout2 = 2131165315;
 			
-			// aapt resource value: 0x7f070098
-			public const int linearLayout3 = 2131165336;
+			// aapt resource value: 0x7f0700a2
+			public const int linearLayout3 = 2131165346;
 			
 			// aapt resource value: 0x7f0700a4
 			public const int linearLayout4 = 2131165348;
@@ -2808,8 +2808,8 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f0700d9
 			public const int offenseType = 2131165401;
 			
-			// aapt resource value: 0x7f07009d
-			public const int offensesAdded = 2131165341;
+			// aapt resource value: 0x7f07009c
+			public const int offensesAdded = 2131165340;
 			
 			// aapt resource value: 0x7f070012
 			public const int packed = 2131165202;
@@ -2856,11 +2856,11 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f07007b
 			public const int radioGroup1 = 2131165307;
 			
-			// aapt resource value: 0x7f070099
-			public const int relativeLayout = 2131165337;
+			// aapt resource value: 0x7f070098
+			public const int relativeLayout = 2131165336;
 			
-			// aapt resource value: 0x7f0700a2
-			public const int relativeLayout2 = 2131165346;
+			// aapt resource value: 0x7f0700a1
+			public const int relativeLayout2 = 2131165345;
 			
 			// aapt resource value: 0x7f07003d
 			public const int right = 2131165245;
@@ -2985,23 +2985,23 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f07001a
 			public const int tabMode = 2131165210;
 			
-			// aapt resource value: 0x7f070086
-			public const int tableLayout1 = 2131165318;
+			// aapt resource value: 0x7f070087
+			public const int tableLayout1 = 2131165319;
 			
-			// aapt resource value: 0x7f07008e
-			public const int tableRow1 = 2131165326;
+			// aapt resource value: 0x7f070088
+			public const int tableRow1 = 2131165320;
 			
-			// aapt resource value: 0x7f070090
-			public const int tableRow2 = 2131165328;
+			// aapt resource value: 0x7f07008c
+			public const int tableRow2 = 2131165324;
+			
+			// aapt resource value: 0x7f07008f
+			public const int tableRow3 = 2131165327;
 			
 			// aapt resource value: 0x7f070092
-			public const int tableRow3 = 2131165330;
+			public const int tableRow4 = 2131165330;
 			
-			// aapt resource value: 0x7f070094
-			public const int tableRow4 = 2131165332;
-			
-			// aapt resource value: 0x7f070096
-			public const int tableRow5 = 2131165334;
+			// aapt resource value: 0x7f070095
+			public const int tableRow5 = 2131165333;
 			
 			// aapt resource value: 0x7f0700cd
 			public const int text = 2131165389;
@@ -3018,26 +3018,26 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f0700a5
 			public const int textView1 = 2131165349;
 			
-			// aapt resource value: 0x7f070097
-			public const int textView10 = 2131165335;
+			// aapt resource value: 0x7f070096
+			public const int textView10 = 2131165334;
 			
 			// aapt resource value: 0x7f0700b4
 			public const int textView2 = 2131165364;
 			
-			// aapt resource value: 0x7f070088
-			public const int textView5 = 2131165320;
+			// aapt resource value: 0x7f07008b
+			public const int textView5 = 2131165323;
 			
-			// aapt resource value: 0x7f07008f
-			public const int textView6 = 2131165327;
+			// aapt resource value: 0x7f070089
+			public const int textView6 = 2131165321;
 			
-			// aapt resource value: 0x7f070091
-			public const int textView7 = 2131165329;
+			// aapt resource value: 0x7f07008d
+			public const int textView7 = 2131165325;
+			
+			// aapt resource value: 0x7f070090
+			public const int textView8 = 2131165328;
 			
 			// aapt resource value: 0x7f070093
-			public const int textView8 = 2131165331;
-			
-			// aapt resource value: 0x7f070095
-			public const int textView9 = 2131165333;
+			public const int textView9 = 2131165331;
 			
 			// aapt resource value: 0x7f0700b3
 			public const int text_input_password_toggle = 2131165363;
@@ -3066,8 +3066,8 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f07005d
 			public const int topPanel = 2131165277;
 			
-			// aapt resource value: 0x7f0700a0
-			public const int totalCost = 2131165344;
+			// aapt resource value: 0x7f07009f
+			public const int totalCost = 2131165343;
 			
 			// aapt resource value: 0x7f0700aa
 			public const int touch_outside = 2131165354;

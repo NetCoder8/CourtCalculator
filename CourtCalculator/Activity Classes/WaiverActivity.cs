@@ -9,6 +9,7 @@ using CourtCalculator.Utility_Classes;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using Javax.Security.Auth;
 
 namespace CourtCalculator
 {
@@ -48,12 +49,16 @@ namespace CourtCalculator
             fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
 
             // Arrays
-            var blankOffenseValue = ArrayAdapter.CreateFromResource(this, Resource.Array.blankOffense, Android.Resource.Layout.SimpleListItem1);
-            var blankOffenseTypeValue = ArrayAdapter.CreateFromResource(this, Resource.Array.offenseType, Android.Resource.Layout.SimpleListItem1);
+            var blankOffenseValue = ArrayAdapter.CreateFromResource(this, Resource.Array.blankOffense,
+                Android.Resource.Layout.SimpleListItem1);
+            var blankOffenseTypeValue = ArrayAdapter.CreateFromResource(this, Resource.Array.offenseType,
+                Android.Resource.Layout.SimpleListItem1);
 
             offenseType.ItemSelected += OffenseType_ItemSelected;
             blankOffenseTypeValue.SetDropDownViewResource(Android.Resource.Layout.SimpleListItem1);
             offenseType.Adapter = blankOffenseTypeValue;
+
+
 
             // main menu button
             mainMenu.Click += MainMenu_Click;
@@ -70,6 +75,10 @@ namespace CourtCalculator
             // floating action button
             fab.Click += Fab_Click;
         }
+
+
+
+
 
         // floating action button on click method
         private void Fab_Click(object sender, System.EventArgs e)
@@ -95,7 +104,7 @@ namespace CourtCalculator
             showingOffenseAlert = changeValue;
         }
 
-        // method for the calulate fine button
+        // method for the calculate fine button
         private void Calculate_Click(object sender, System.EventArgs e)
         {
             bool isValid = false;
@@ -832,13 +841,18 @@ namespace CourtCalculator
             }
         }
 
+
+
         protected override void OnSaveInstanceState(Bundle outState)
         {
             base.OnSaveInstanceState(outState);
             string savedArray = JsonConvert.SerializeObject(offenseList);
+            int selectedOffense = offense.SelectedItemPosition;
+
 
             outState.PutString("COURT_COST_TEXT", cost.Text);
             outState.PutString("OFFENSE_ARRAY", savedArray);
+            outState.PutInt("SELECTED_OFFENSE", selectedOffense);
 
             outState.PutInt("COURT_COST", courtCost);
             outState.PutInt("TOTAL_COST", totalCost);
@@ -853,10 +867,11 @@ namespace CourtCalculator
         {
             base.OnRestoreInstanceState(savedInstanceState);
             var passedArray = savedInstanceState.GetString("OFFENSE_ARRAY");
+            var selectedOffense = savedInstanceState.GetInt("SELECTED_OFFENSE");
 
             cost.Text = savedInstanceState.GetString("COURT_COST_TEXT");
             offenseList = JsonConvert.DeserializeObject<List<Offense>>(passedArray);
-            
+
             courtCost = savedInstanceState.GetInt("COURT_COST");
             totalCost = savedInstanceState.GetInt("TOTAL_COST");
             totalFineAmount = savedInstanceState.GetInt("TOTAL_FINE");
@@ -865,7 +880,7 @@ namespace CourtCalculator
             showingCostAlert = savedInstanceState.GetBoolean("COST_DIALOG");
             priceCalculated = savedInstanceState.GetBoolean("ALREADY_CALCULATED");
 
-            var focusLayout = (RelativeLayout) FindViewById(Resource.Id.layout1);
+            var focusLayout = (RelativeLayout)FindViewById(Resource.Id.layout1);
             focusLayout.Focusable = true;
             focusLayout.FocusableInTouchMode = true;
             focusLayout.RequestFocus();

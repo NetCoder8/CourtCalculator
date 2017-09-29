@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="CourtCalculator.CourtCalculator" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="camelcode.courtcalculator2" android:versionCode="1" android:versionName="2.0" android:installLocation="internalOnly">
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="25" />
-	<application android:label="CourtCalculator" android:theme="@style/MyCustomTheme"></application>
+	<application android:label="Court Calculator" android:theme="@style/MyCustomTheme" android:icon="@drawable/icon"></application>
 </manifest>

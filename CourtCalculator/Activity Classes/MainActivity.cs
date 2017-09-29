@@ -33,10 +33,12 @@ namespace CourtCalculator
 
             if (radGetCourtDate.Checked)
             {
+                intent.SetFlags(ActivityFlags.ClearTop);
                 intent = new Intent(this, typeof(CalcActivity));
             }
             else if (radGetWaiverFine.Checked)
             {
+                intent.SetFlags(ActivityFlags.ClearTop);
                 intent = new Intent(this, typeof(WaiverActivity));
             }
 

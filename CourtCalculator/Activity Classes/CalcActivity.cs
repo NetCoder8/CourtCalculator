@@ -7,7 +7,7 @@ using System;
 
 namespace CourtCalculator
 {
-    [Activity(Label = "Calc Activity")]
+    [Activity(Label = "Court Date Calculator")]
     public class CalcActivity : AppCompatActivity
     {
         private Button btnSelectDate, btnMainMenu, btnGo;
@@ -71,6 +71,7 @@ namespace CourtCalculator
                 intent.PutExtra("Month", selectedMonth);
                 intent.PutExtra("Day", selectedDay);
                 intent.PutExtra("Year", selectedYear);
+                intent.SetFlags(ActivityFlags.ClearTop);
                 StartActivity(intent);
             }
             else if (radCityTraffic.Checked)
@@ -79,6 +80,7 @@ namespace CourtCalculator
                 intent.PutExtra("Month", selectedMonth);
                 intent.PutExtra("Day", selectedDay);
                 intent.PutExtra("Year", selectedYear);
+                intent.SetFlags(ActivityFlags.ClearTop);
                 StartActivity(intent);
             }
             else if (radStateMisd.Checked)
@@ -87,6 +89,7 @@ namespace CourtCalculator
                 intent.PutExtra("Month", selectedMonth);
                 intent.PutExtra("Day", selectedDay);
                 intent.PutExtra("Year", selectedYear);
+                intent.SetFlags(ActivityFlags.ClearTop);
                 StartActivity(intent);
             }
             else if (radStateTraffic.Checked)
@@ -95,6 +98,7 @@ namespace CourtCalculator
                 intent.PutExtra("Month", selectedMonth);
                 intent.PutExtra("Day", selectedDay);
                 intent.PutExtra("Year", selectedYear);
+                intent.SetFlags(ActivityFlags.ClearTop);
                 StartActivity(intent);
             }
         }
@@ -103,6 +107,7 @@ namespace CourtCalculator
         private void BtnMainMenu_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(MainActivity));
+            intent.SetFlags(ActivityFlags.ClearTop);
             StartActivity(intent);
         }
 

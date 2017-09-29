@@ -43,6 +43,7 @@ namespace CourtCalculator
         private void MainMenu_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(MainActivity));
+            intent.SetFlags(ActivityFlags.ClearTop);
             StartActivity(intent);
         }
     }

@@ -54,18 +54,16 @@
                 android:id="@+id/btnCalcFine"
                 android:layout_gravity="center_horizontal"
                 android:background="@color/accent_material_light"
-                android:layout_below="@id/cost" />
-            <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="wrap_content"
+                android:layout_below="@id/cost"
+                android:layout_marginBottom="10dp" />
+            <Button
+                android:text="@string/showOffenses"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/fab"
-                android:translationZ="16dp"
-                android:layout_gravity="right"
-                android:src="@drawable/fabIcon"
-                app:fabSize="mini"
-                android:backgroundTint="#ff009688"
-                android:layout_below="@id/btnCalcFine"
-                android:layout_marginTop="20dp" />
+                android:id="@+id/btnShowAddedOffenses"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/accent_material_light"
+                android:layout_below="@id/btnCalcFine" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/layout3"

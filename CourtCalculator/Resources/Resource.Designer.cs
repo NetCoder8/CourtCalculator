@@ -2568,8 +2568,11 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f07007a
 			public const int btnSelectDate = 2131165306;
 			
-			// aapt resource value: 0x7f0700de
-			public const int btnStartOver = 2131165406;
+			// aapt resource value: 0x7f0700dd
+			public const int btnShowAddedOffenses = 2131165405;
+			
+			// aapt resource value: 0x7f0700df
+			public const int btnStartOver = 2131165407;
 			
 			// aapt resource value: 0x7f070052
 			public const int buttonPanel = 2131165266;
@@ -2673,9 +2676,6 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f070061
 			public const int expanded_menu = 2131165281;
 			
-			// aapt resource value: 0x7f0700df
-			public const int fab = 2131165407;
-			
 			// aapt resource value: 0x7f070043
 			public const int fill = 2131165251;
 			
@@ -2727,8 +2727,8 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f0700d9
 			public const int layout2 = 2131165401;
 			
-			// aapt resource value: 0x7f0700dd
-			public const int layout3 = 2131165405;
+			// aapt resource value: 0x7f0700de
+			public const int layout3 = 2131165406;
 			
 			// aapt resource value: 0x7f070086
 			public const int layoutMain = 2131165318;
@@ -3471,47 +3471,47 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f080022
 			public const int bottom_sheet_behavior = 2131230754;
 			
-			// aapt resource value: 0x7f080048
-			public const int btnAdd = 2131230792;
-			
 			// aapt resource value: 0x7f080049
-			public const int btnCalcFine = 2131230793;
-			
-			// aapt resource value: 0x7f080030
-			public const int btnDate = 2131230768;
-			
-			// aapt resource value: 0x7f08002e
-			public const int btnGo = 2131230766;
-			
-			// aapt resource value: 0x7f080035
-			public const int btnMainMenu = 2131230773;
-			
-			// aapt resource value: 0x7f080054
-			public const int btnOK = 2131230804;
+			public const int btnAdd = 2131230793;
 			
 			// aapt resource value: 0x7f08004a
-			public const int btnStartOver = 2131230794;
+			public const int btnCalcFine = 2131230794;
+			
+			// aapt resource value: 0x7f080031
+			public const int btnDate = 2131230769;
+			
+			// aapt resource value: 0x7f08002f
+			public const int btnGo = 2131230767;
+			
+			// aapt resource value: 0x7f080036
+			public const int btnMainMenu = 2131230774;
+			
+			// aapt resource value: 0x7f080055
+			public const int btnOK = 2131230805;
+			
+			// aapt resource value: 0x7f08004b
+			public const int btnStartOver = 2131230795;
 			
 			// aapt resource value: 0x7f080023
 			public const int character_counter_pattern = 2131230755;
 			
-			// aapt resource value: 0x7f08004d
-			public const int cityMisdTitle = 2131230797;
-			
-			// aapt resource value: 0x7f080050
-			public const int cityTrafficTitle = 2131230800;
-			
 			// aapt resource value: 0x7f08004e
-			public const int courtDayCalcTitle = 2131230798;
+			public const int cityMisdTitle = 2131230798;
 			
-			// aapt resource value: 0x7f080053
-			public const int hint = 2131230803;
+			// aapt resource value: 0x7f080051
+			public const int cityTrafficTitle = 2131230801;
 			
-			// aapt resource value: 0x7f08002f
-			public const int imgBadge = 2131230767;
+			// aapt resource value: 0x7f08004f
+			public const int courtDayCalcTitle = 2131230799;
 			
-			// aapt resource value: 0x7f080055
-			public const int offenseTypeHint = 2131230805;
+			// aapt resource value: 0x7f080054
+			public const int hint = 2131230804;
+			
+			// aapt resource value: 0x7f080030
+			public const int imgBadge = 2131230768;
+			
+			// aapt resource value: 0x7f080056
+			public const int offenseTypeHint = 2131230806;
 			
 			// aapt resource value: 0x7f080024
 			public const int password_toggle_content_description = 2131230756;
@@ -3528,104 +3528,107 @@ namespace CourtCalculator
 			// aapt resource value: 0x7f080028
 			public const int path_password_strike_through = 2131230760;
 			
-			// aapt resource value: 0x7f080033
-			public const int rdbtnCityMisd = 2131230771;
-			
-			// aapt resource value: 0x7f080031
-			public const int rdbtnCityTraffic = 2131230769;
-			
-			// aapt resource value: 0x7f08002c
-			public const int rdbtnCourtDate = 2131230764;
-			
 			// aapt resource value: 0x7f080034
-			public const int rdbtnStateMisd = 2131230772;
+			public const int rdbtnCityMisd = 2131230772;
 			
 			// aapt resource value: 0x7f080032
-			public const int rdbtnStateTraffic = 2131230770;
+			public const int rdbtnCityTraffic = 2131230770;
 			
 			// aapt resource value: 0x7f08002d
-			public const int rdbtnWaiver = 2131230765;
+			public const int rdbtnCourtDate = 2131230765;
+			
+			// aapt resource value: 0x7f080035
+			public const int rdbtnStateMisd = 2131230773;
+			
+			// aapt resource value: 0x7f080033
+			public const int rdbtnStateTraffic = 2131230771;
+			
+			// aapt resource value: 0x7f08002e
+			public const int rdbtnWaiver = 2131230766;
 			
 			// aapt resource value: 0x7f080013
 			public const int search_menu_title = 2131230739;
 			
-			// aapt resource value: 0x7f08004b
-			public const int spinnerPrompt = 2131230795;
+			// aapt resource value: 0x7f08002a
+			public const int showOffenses = 2131230762;
 			
 			// aapt resource value: 0x7f08004c
-			public const int spinnerPrompt2 = 2131230796;
+			public const int spinnerPrompt = 2131230796;
 			
-			// aapt resource value: 0x7f080051
-			public const int stateMisdTitle = 2131230801;
+			// aapt resource value: 0x7f08004d
+			public const int spinnerPrompt2 = 2131230797;
 			
 			// aapt resource value: 0x7f080052
-			public const int stateTrafficTitle = 2131230802;
+			public const int stateMisdTitle = 2131230802;
+			
+			// aapt resource value: 0x7f080053
+			public const int stateTrafficTitle = 2131230803;
 			
 			// aapt resource value: 0x7f080014
 			public const int status_bar_notification_info_overflow = 2131230740;
 			
-			// aapt resource value: 0x7f08003c
-			public const int txt1030 = 2131230780;
-			
 			// aapt resource value: 0x7f08003d
-			public const int txt1330 = 2131230781;
-			
-			// aapt resource value: 0x7f080042
-			public const int txtCityMisdTime1 = 2131230786;
-			
-			// aapt resource value: 0x7f080043
-			public const int txtCityMisdTime2 = 2131230787;
-			
-			// aapt resource value: 0x7f080044
-			public const int txtCityMisdTime3 = 2131230788;
-			
-			// aapt resource value: 0x7f080045
-			public const int txtCityMisdTime4 = 2131230789;
-			
-			// aapt resource value: 0x7f080046
-			public const int txtCityMisdTime5 = 2131230790;
-			
-			// aapt resource value: 0x7f080041
-			public const int txtCityMisdTitle = 2131230785;
-			
-			// aapt resource value: 0x7f080036
-			public const int txtCityTitle = 2131230774;
-			
-			// aapt resource value: 0x7f08003b
-			public const int txtFri = 2131230779;
-			
-			// aapt resource value: 0x7f08002a
-			public const int txtMainTitle1 = 2131230762;
-			
-			// aapt resource value: 0x7f08002b
-			public const int txtMainTitle2 = 2131230763;
-			
-			// aapt resource value: 0x7f080037
-			public const int txtMonday = 2131230775;
-			
-			// aapt resource value: 0x7f080047
-			public const int txtStateTitle = 2131230791;
-			
-			// aapt resource value: 0x7f08003f
-			public const int txtStateTraffic0900 = 2131230783;
-			
-			// aapt resource value: 0x7f080040
-			public const int txtStateTraffic1030 = 2131230784;
+			public const int txt1030 = 2131230781;
 			
 			// aapt resource value: 0x7f08003e
-			public const int txtStateTrafficTitle = 2131230782;
+			public const int txt1330 = 2131230782;
 			
-			// aapt resource value: 0x7f08003a
-			public const int txtThur = 2131230778;
+			// aapt resource value: 0x7f080043
+			public const int txtCityMisdTime1 = 2131230787;
+			
+			// aapt resource value: 0x7f080044
+			public const int txtCityMisdTime2 = 2131230788;
+			
+			// aapt resource value: 0x7f080045
+			public const int txtCityMisdTime3 = 2131230789;
+			
+			// aapt resource value: 0x7f080046
+			public const int txtCityMisdTime4 = 2131230790;
+			
+			// aapt resource value: 0x7f080047
+			public const int txtCityMisdTime5 = 2131230791;
+			
+			// aapt resource value: 0x7f080042
+			public const int txtCityMisdTitle = 2131230786;
+			
+			// aapt resource value: 0x7f080037
+			public const int txtCityTitle = 2131230775;
+			
+			// aapt resource value: 0x7f08003c
+			public const int txtFri = 2131230780;
+			
+			// aapt resource value: 0x7f08002b
+			public const int txtMainTitle1 = 2131230763;
+			
+			// aapt resource value: 0x7f08002c
+			public const int txtMainTitle2 = 2131230764;
 			
 			// aapt resource value: 0x7f080038
-			public const int txtTues = 2131230776;
+			public const int txtMonday = 2131230776;
+			
+			// aapt resource value: 0x7f080048
+			public const int txtStateTitle = 2131230792;
+			
+			// aapt resource value: 0x7f080040
+			public const int txtStateTraffic0900 = 2131230784;
+			
+			// aapt resource value: 0x7f080041
+			public const int txtStateTraffic1030 = 2131230785;
+			
+			// aapt resource value: 0x7f08003f
+			public const int txtStateTrafficTitle = 2131230783;
+			
+			// aapt resource value: 0x7f08003b
+			public const int txtThur = 2131230779;
 			
 			// aapt resource value: 0x7f080039
-			public const int txtWed = 2131230777;
+			public const int txtTues = 2131230777;
 			
-			// aapt resource value: 0x7f08004f
-			public const int waiverTitle = 2131230799;
+			// aapt resource value: 0x7f08003a
+			public const int txtWed = 2131230778;
+			
+			// aapt resource value: 0x7f080050
+			public const int waiverTitle = 2131230800;
 			
 			static String()
 			{

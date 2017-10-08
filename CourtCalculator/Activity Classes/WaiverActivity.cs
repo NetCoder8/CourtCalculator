@@ -20,6 +20,7 @@ namespace CourtCalculator
         private Button startOver;
         private Button addOffense;
         private Button calculate;
+        private Button showOffenses;
         private EditText cost;
         private int totalCost = 0;
         private int courtCost = 0;
@@ -46,7 +47,7 @@ namespace CourtCalculator
             calculate = FindViewById<Button>(Resource.Id.btnCalcFine);
             mainMenu = FindViewById<Button>(Resource.Id.btnMainMenu);
             cost = FindViewById<EditText>(Resource.Id.cost);
-            fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
+            showOffenses = FindViewById<Button>(Resource.Id.btnShowAddedOffenses);
 
             // Arrays
             var blankOffenseValue = ArrayAdapter.CreateFromResource(this, Resource.Array.blankOffense,
@@ -72,8 +73,15 @@ namespace CourtCalculator
             // calculates the fine
             calculate.Click += Calculate_Click;
 
-            // floating action button
-            fab.Click += Fab_Click;
+            // show offense button
+ 
+            showOffenses.Click += ShowOffenses_Click;
+
+        }
+
+        private void ShowOffenses_Click(object sender, EventArgs e)
+        {
+            ShowOffenseDialog();
         }
 
 
@@ -81,10 +89,7 @@ namespace CourtCalculator
 
 
         // floating action button on click method
-        private void Fab_Click(object sender, System.EventArgs e)
-        {
-            ShowOffenseDialog();
-        }
+       
 
         // Method to show the Offense Dialog Box
         private void ShowOffenseDialog()

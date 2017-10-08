@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">Court Calculator</string>
+  <string name="showOffenses">Show Added Offenses</string>
   <string name="txtMainTitle1">Welcome to the Court Calculator.</string>
   <string name="txtMainTitle2">Please make a selection</string>
   <string name="rdbtnCourtDate">Get Court Date</string>

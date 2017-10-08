@@ -66,6 +66,14 @@
                 android:layout_gravity="center_horizontal"
                 android:background="@color/accent_material_light"
                 android:layout_below="@id/cost" />
+            <Button
+                android:text="@string/showOffenses"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnShowAddedOffenses"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/accent_material_light"
+                android:layout_below="@id/cost" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/layout3"
@@ -90,24 +98,6 @@
                 android:layout_gravity="center_horizontal"
                 android:background="@color/accent_material_light"
                 android:layout_below="@id/btnStartOver" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_below="@id/layout3"
-            android:layout_height="50dp"
-            android:layout_width="wrap_content"
-            android:gravity="bottom">
-            <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/fab"
-                android:translationZ="16dp"
-                android:layout_gravity="right"
-                android:src="@drawable/fabIcon"
-                app:fabSize="mini"
-                android:backgroundTint="#ff009688"
-                android:layout_alignParentRight="true"
-                android:layout_alignRight="@id/btnMainMenu"
-                android:layout_below="@id/btnMainMenu" />
         </RelativeLayout>
     </RelativeLayout>
 </ScrollView>

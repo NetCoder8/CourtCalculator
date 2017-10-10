@@ -28,7 +28,6 @@ namespace CourtCalculator
         private Spinner offenseType;
         private Spinner offense;
         private List<Offense> offenseList = new List<Offense>();
-        private FloatingActionButton fab;
         private bool showingCostAlert;
         private bool showingOffenseAlert;
         private bool priceCalculated;
